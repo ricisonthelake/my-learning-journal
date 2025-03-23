@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Photos by Phil Desforges, Annmarie Gruden, Behnam Norouzi,
+        ergonofis, Phil desforges, Toa Heftiba and Visualsouflukas on unsplash.com
+        and Andrew Neel on Pexels -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journal</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation"> <span class="hamburger"></span> </button>
+            <div class="logo__items">
+                <a href="../index.html" class="logo"> <img src="/images/1small.png" alt="conquering responsive layouts">
+                </a>
+                <a href="../index.html">
+                    <p>My Learning Journal</p>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/pages/posts.html" class="nav__link">Posts</a></li>
+                    <li class="nav__item"><a href="/pages/about-me.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondary">
+                    <li class="nav__item"><a href="https://scrimba.com/#sign-in" class="nav__link" target="_blank">Sign
+                            In</a></li>
+                    <li class="nav__item"><a href="https://scrimba.com/#sign-in" class="nav__link nav__link--button"
+                            target="_blank">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+
+        <div class="contact-container">
+            <div>
+            <form id="contact-form">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name..." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name..." required>
+
+                <label for="eAddr">Email Address</label>
+                <input type="email" id="eAddr" name="eAddr" placeholder="Your emailAddr address..." required>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="write your question/comment here..." style="height:200px" required></textarea>
+            </form>
+            <div>
+                <button type="submit" class="submit_btn" id="submit_btn">Submit</button>
+            </div>
+
+        </div>            
+
+
+            <section>
+                <div class="contact-form-submitted hidden" id="contact-form-submitted"></div>
+            </section>
+
+
+            <section id="rating_modal" class="rating_modal ">
+                <div class="rating_modal_content">
+                    <div class="rating_modal_header">
+                        <span class="cancel_rating_modal">&times;</span>
+                        <h3>Thank you for your comments and questions</h3>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>My Learning Jounal</p>
+        <p>Copyright 2024</p>
+    </footer>
+
+
+    <script src="/js/contact.js" type="module"></script>
+</body>
+
+</html>

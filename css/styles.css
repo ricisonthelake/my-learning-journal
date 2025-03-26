@@ -15,6 +15,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+#subject {
+    height: 12.5em
+}
+
 /* =================
 Layout
 ================= */
@@ -41,7 +45,7 @@ header {
 
 .article-listing {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16.875em, 1fr));
     margin: 1em;
 }
 
@@ -123,7 +127,7 @@ Typography
 .hamburger::after {
     display: block;
     margin: 0;
-    height: 3px;
+    height: 0.1875em;
     background: #000;
 }
 
@@ -183,7 +187,7 @@ Typography
     padding: .25em .75em;
     background: hsl(0, 0%, 0%);
     color: #fff;
-    border-radius: 100px;
+    border-radius: 6.25em;
 }
 
 .nav__link:hover,
@@ -202,7 +206,7 @@ Typography
 }
 
 .logo {
-    height: 60px;
+    height: 3.75em;
     margin: auto;
 }
 
@@ -215,7 +219,7 @@ Typography
     justify-content: end;
     color: white;
     width: auto;
-    height: 400px;
+    height: 25em;
 }
 
 .post-hdg {
@@ -392,11 +396,11 @@ main h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 400px;
+    width: 29em;
     margin: 2em auto;
-    border-radius: 5px;
+    border-radius: 1.125em;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 main h1 {
@@ -406,9 +410,9 @@ main h1 {
 .contact-form-submitted {
     display: flex;
     flex-direction: column;
-    margin: 10px auto 0px;
-    width: 400px;
-    height: 400px;
+    margin: 0.625em auto 0;
+    width: 25em;
+    height: 25em;
     position: fixed;
     top: 17%;
     left: 13%;
@@ -420,23 +424,23 @@ main h1 {
 input[type=text],
 textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: .75em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.375em;
+    margin-bottom: 1em;
     resize: vertical;
 }
 
 input[type=email] {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 0.75em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 0.375em;
+    margin-bottom: 1em;
     resize: vertical;
 }
 
@@ -446,12 +450,12 @@ input[type=email] {
 
 @keyframes animatetop {
     from {
-        top: -300px;
+        bottom: -300px;
         opacity: 0
     }
 
     to {
-        top: 0;
+        bottom: 0;
         opacity: 1
     }
 }
@@ -460,13 +464,13 @@ input[type=email] {
     text-align: center;
     width: 6em;
     height: 2em;
-    margin: 5px 96px;
-    padding: 50px auto;
+    margin: 0.3125em 6em;
+    padding: 3.125em auto;
     background-color: #5cb85c;
-    border: solid 2px #5cb85c;
-    border-radius: 5px;
+    border: solid 0.125em #5cb85c;
+    border-radius: 0.3125em;
     color: #fefefe;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 
@@ -474,7 +478,7 @@ input[type=email] {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 80px;
+    padding-top: 5em;
     left: 0;
     top: 0;
     width: 100%;
@@ -485,17 +489,17 @@ input[type=email] {
 }
 
 .rating_modal_header {
-    width: 275px;
-    height: 150px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 0px 16px 20px;
+    width: 17.188em;
+    height: 9.375em;
+    margin-top: 1.25em;
+    margin-bottom: 2.5em;
+    padding: 0 1em 1em;
     background-color: khaki;
     text-align: center;
     color: #000000;
     font-size: 1.5rem;
-    border: red solid 1px;
-    border-radius: 4px;
+    border: red solid 0.0625em;
+    border-radius: 0.25em;
 }
 
 .rating_modal_content {
@@ -504,13 +508,13 @@ input[type=email] {
     align-items: center;
     position: relative;
     background-color: #fefefe;
-    margin: 5rem auto;
+    margin: 5em auto;
     padding: 0;
-    border: 1px solid #888;
-    border-radius: 4px;
-    width: 324px;
-    height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0.0625em solid #888;
+    border-radius: 0.25em;
+    width: 20.25em;
+    height: 13.5em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
 }
@@ -518,7 +522,7 @@ input[type=email] {
 .cancel_rating_modal {
     color: black;
     float: right;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -531,8 +535,8 @@ input[type=email] {
 
 .rate {
     float: left;
-    height: 46px;
-    padding: 0 10px;
+    height: 2.875em;
+    padding: 0 0.625em;
 }
 
 .rate:not(:checked)>input {
@@ -546,7 +550,7 @@ input[type=email] {
     overflow: hidden;
     white-space: nowrap;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #ccc;
 }
 
@@ -607,7 +611,7 @@ input[type=email] {
     }
 
     .hero {
-        height: 550px;
+        height: 34.375em;
     }
 
     .grid {

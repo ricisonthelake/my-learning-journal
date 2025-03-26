@@ -34,7 +34,6 @@ submitBtn.onclick = function (submit, event) {
 
 
 function displayRating() {
-    console.log("in displayRating")
     document.getElementById("rating_modal").style.display = "inline"
 }
 

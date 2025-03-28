@@ -40,7 +40,7 @@ Layout
 
 header {
     background: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .article-listing {
@@ -64,10 +64,11 @@ footer {
 
 .hero-img {
     width: 100%;
+    margin: 0 auto;
 }
 
 .hero-img-id {
-    margin: 2em;
+    margin: 2em 2em 2em 0;
     width: 12em;
     border-radius: 50%;
 }
@@ -84,9 +85,10 @@ footer {
         "post-hdr2"
         "post-text2"
 }
-
+.hero,
 .posts-hero {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* =================
@@ -159,6 +161,7 @@ Typography
     position: relative;
     margin-right: 0em;
     margin-bottom: 1.5em;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -225,14 +228,15 @@ Typography
 .post-hdg {
     font-weight: 700;
     font-size: 1rem;
-    /* line-height: 1.25em; */
+    line-height: 1.25em;
 }
 
 .post-preview {
-    margin: 0 1em;
+    margin: 0 auto;
+    width: 80%;
     font-weight: 400;
-    font-size: 1rem;
-    /* line-height: 1.25; */
+    font-size: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .recent-posts-hdg {
@@ -251,22 +255,20 @@ Typography
 }
 
 .hero-title {
-    font-size: 2.18rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1em;
+    line-height: 1.125em;
     margin: 0.25em 0;
 }
 
 .hero-preview {
     margin: 0 0 1em 0;
-    font-size: 1rem;
-}
-
-.article-listing {
-    margin: 0 1em;
+    font-size: 1.125rem;
+    line-height: 1.275rem;
 }
 
 article {
+    display: grid;
     margin: 1em 1em;
 }
 
@@ -301,6 +303,7 @@ article {
 }
 
 .article-body {
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 0 0 1em 0;
 }
@@ -340,19 +343,19 @@ article {
     justify-content: left;
     margin: 0 1.5em;
 }
-
+/* 
 .hero-img-id {
     margin: 1em 0;
     width: 12em;
     border-radius: 50%;
 }
-
+ */
 .header {
     max-width: 100%;
 }
 
 .post-title {
-    width: 90%;
+    width: 100%;
     font-size: 2.18rem;
     font-weight: 700;
 }
@@ -362,17 +365,17 @@ span {
 }
 
 .header-text {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 300;
     text-align: left;
     padding-bottom: 2em;
 }
 
-.hero-preview {
+/* .hero-preview {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.5rem;
-}
+} */
 
 .post-hdg {
     font-weight: 700;
@@ -614,6 +617,18 @@ input[type=email] {
         height: 34.375em;
     }
 
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0.25em 0;
+}
+
+.hero-preview {
+    margin: 0 0 1em 0;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
     .grid {
         grid-template-columns: 250px auto;
         grid-template-areas:
